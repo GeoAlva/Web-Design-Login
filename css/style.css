@@ -16,17 +16,18 @@ html,body{
 
   .home .left{
     background-image:  url("../images/bg.jpg");
+    background-size:cover;
     float :left;
     width: 65%;
     background-color: #ffffff;
   }
 
-  .logo{
+  /* .logo{
     height: 50px;
     margin-top: 50px;
     margin-right: 30%;
     margin-left: 40%;
-  }
+  } */
 
   .home .right{
     float: right;
@@ -34,24 +35,28 @@ html,body{
     background-color: #444;
   }
 
-  .container{
+  .form {
     color: #ffffff;
+    height: 100%;
+    width: 20vw;
+    margin:auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    background-color: #444;
-    min-width: 250px;
-    width:20vw;
-    display: block;
-    padding: 2.5rem;
-    margin:2em auto 2em auto;
 }
 
-.container .form-element{
-    position: relative;
-    padding-bottom: 1em;
+.form .form-left{
+  align-self: flex-start;
 }
+
+.form .form-element {
+  position: relative;
+  padding-bottom: 1em;
+  margin-top: 2vh;
+  width: 100%;
+}
+
 
 .form-input{
     position: relative;
@@ -97,4 +102,8 @@ input:focus ~ .floating-label,
 .btn:hover{
     background-color: #0f186b;
     transition-duration: 200ms;
+}
+
+.form .logo {
+  height: 50px;
 }

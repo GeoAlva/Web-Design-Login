@@ -17,11 +17,9 @@ session_start();
     <div class="home">
         <div class="left">
 
-            </form>
-
         </div>
         <div class="right">
-            <form class="container" action="registration.php" method="post">
+            <form class="form" action="registration.php" method="post">
 
                 <h2>Sign In</h2>
 
@@ -51,8 +49,8 @@ session_start();
                 </div>
 
                 <input type="submit" id="submit" name="submit" value="Submit" class="btn"> <br><br>
-                <span> Already Registered? </span>
-                <a href="login.php"> Log in</a>
+                <p class="form-left"> Already Registered? <a href="login.php"> Log in</a></p>
+
                 <br>
                 <img src="images/logo.png" alt="logo" class="logo">
             </form>
