@@ -12,7 +12,7 @@ html,body{
     color: #8A42FE;
     margin-left: 105px;
     position: absolute;
-    top:-18px;
+    top:10px;
     font-size: 45px;
     font-family:MetropolisBlack;
   }
@@ -68,9 +68,9 @@ html,body{
 }
 
 .form .benvenuto{
-  font-family: MetropolisBlack;
+  font-family: MetropolisBlack,sans-serif;
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .form .form-left{
@@ -157,7 +157,7 @@ input:focus ~ .floating-label,
 .logo{
   margin-bottom: 20px;
   height: 40px;
-  margin-top: 45px;
+  margin-top: 70px;
   margin-left: 45px;
 }
 
