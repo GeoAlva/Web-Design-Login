@@ -8,6 +8,23 @@ html,body{
     margin: 0;
   }
 
+  .slogan {
+    color: #8A42FE;
+    margin-left: 105px;
+    position: absolute;
+    top:-18px;
+    font-size: 45px;
+    font-family:MetropolisBlack;
+  }
+  .text_fg {
+    color:#8A42FE;
+    font-family: OpenSans-Light;
+    font-size: 23px;
+    margin-left: 45px;
+    margin-top: 40px;
+
+}
+
   .home{
     display: flex;
     height: 100%;
@@ -16,18 +33,21 @@ html,body{
 
   .home .left{
     background-image: url("../images/bg.jpg");
-    background-size:cover;
+    background-size:1110px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     float :left;
     width: 65%;
     background-color: #ffffff;
   }
 
 
-  .home .right{
+  .home .right {
     float: right;
-    width: 35%;
-    background-color: #444;
-  }
+    width: 48%;
+    height: 100%;
+    background-color: #8A42FE;
+}
 
   .form {
     color: #ffffff;
@@ -40,15 +60,23 @@ html,body{
     align-items: center;
 }
 
+.form .benvenuto{
+  font-family: MetropolisBlack;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
 .form .form-left{
   align-self: flex-start;
 }
 
 .form .form-element {
+  display: flex;
   position: relative;
   padding-bottom: 1em;
   margin-top: 2vh;
   width: 100%;
+  align-items: center;
 }
 
 
@@ -57,22 +85,25 @@ html,body{
     width: 100%;
     height: 3.2em;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-sizing: border-box;
     padding-left: 1em;
     padding-top: 0.85em;
+    border: none;
 }
 
 
 .floating-label{
     position: absolute;
     width: 100%;
-    top: 32%;
+    top: 19%;
     left: 1em;
-    color: #444;
+    color: #8A42FE;
     font-size: 18px;
     cursor: text;
     transition: top 200ms ease-in, font-size 200ms ease-in;
+
+    font-family: OpenSans-Light;
 }   
 
 input:focus ~ .floating-label,
@@ -82,22 +113,105 @@ input:focus ~ .floating-label,
     padding: 0 0.125em;
 }
 
-.btn{
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color:#1b2bbf;
-    color: #ffffff;
-
+.icon_1{
+  height:25px ;
+  margin: 5px;
+  margin-left: 185px;
+  margin-top:358px;
+  position: absolute;
 }
 
-.btn:hover{
-    background-color: #0f186b;
-    transition-duration: 200ms;
+.icon_2{
+  height:25px ;
+  margin: 5px;
+  margin-left: 185px;
+  margin-top:442px;
+  position: absolute;
 }
 
-.form .logo {
-  height: 50px;
+.icon_3{
+  height:25px ;
+  margin: 5px;
+  margin-left: 185px;
+  margin-top:528px;
+  position: absolute;
+}
+
+.icon_4{
+  height:25px ;
+  margin: 5px;
+  margin-left: 185px;
+  margin-top:389px;
+  position: absolute;
+}
+
+.icon_5{
+  height:25px ;
+  margin: 5px;
+  margin-left: 185px;
+  margin-top:472px;
+  position: absolute;
+}
+
+.forgot{
+  font-family: OpenSans-Light;
+  font-size: 13px;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.btn {
+  min-width: 120px;
+  width: 140px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #FF6ECD;
+  color: #ffffff;
+  margin-top: 2vh;
+  font-family: OpenSans-Bold;
+  font-size: 19px;
+  margin-bottom: 3vh;
+}
+
+.btn:hover {
+  background-color: #bec1d3;
+  transition-duration: 200ms;
+}
+
+.logo{
+  margin-bottom: 20px;
+  height: 40px;
+  margin-top: 45px;
+  margin-left: 45px;
+}
+
+.account{
+  font-family: OpenSans-Light;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+a {
+  margin-top: 5px;
+  font-family: OpenSans-Bold;
+  font-size: 19px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: MetropolisBlack;
+  src: url("../fonts/Metropolis-Black.otf");
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url("../fonts/OpenSans-Light.ttf");
 }
