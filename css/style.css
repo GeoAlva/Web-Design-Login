@@ -31,16 +31,23 @@ html,body{
   }
 
 
+
   .home .left{
-    background-image: url("../images/bg.jpg");
-    background-size:1110px;
-    background-repeat: no-repeat;
-    background-position: center bottom;
     float :left;
     width: 65%;
-    background-color: #ffffff;
+    height: 100%;  }
+
+.left-top{
+    height: 20%;
   }
 
+.left-bottom{
+  height: 85%;
+    background-image: url("../images/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 
   .home .right {
     float: right;
@@ -113,45 +120,12 @@ input:focus ~ .floating-label,
     padding: 0 0.125em;
 }
 
-.icon_1{
-  height:25px ;
-  margin: 5px;
-  margin-left: 185px;
-  margin-top:358px;
-  position: absolute;
+.icons{
+  height: 25px;
+  position:absolute;
+  margin-left:-30px;
 }
 
-.icon_2{
-  height:25px ;
-  margin: 5px;
-  margin-left: 185px;
-  margin-top:442px;
-  position: absolute;
-}
-
-.icon_3{
-  height:25px ;
-  margin: 5px;
-  margin-left: 185px;
-  margin-top:528px;
-  position: absolute;
-}
-
-.icon_4{
-  height:25px ;
-  margin: 5px;
-  margin-left: 185px;
-  margin-top:389px;
-  position: absolute;
-}
-
-.icon_5{
-  height:25px ;
-  margin: 5px;
-  margin-left: 185px;
-  margin-top:472px;
-  position: absolute;
-}
 
 .forgot{
   font-family: OpenSans-Light;
