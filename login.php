@@ -17,11 +17,12 @@ session_start();
     <div class="home">
         <div class="left">
 
+            </form>
+
         </div>
         <div class="right">
-
-            <form action="login.php" method="post" class="form">
-                <h2 class="form-left">Log in</h2>
+            <form action="log-in.php" method="post" class="container">
+                <h2>Log in</h2>
 
                 <div class="form-element">
                     <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
@@ -34,7 +35,8 @@ session_start();
                 </div>
 
                 <input type="submit" id="submit" name="submit" value="Submit" class="btn"> <br><br>
-                <p class="form-left"> Create Account? <a href="index.php">Sign-Up</a></p>
+                <span> Create Account? </span>
+                <a href="index.php">Sign-Up</a>
                 <br>
                 <img src="images/logo.png" alt="logo" class="logo">
             </form>
