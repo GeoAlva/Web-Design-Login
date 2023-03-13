@@ -42,9 +42,9 @@ html,body{
   }
 
 .left-bottom{
-  height: 85%;
+  height: 80%;
     background-image: url("../images/bg.jpg");
-    background-size:cover;
+    background-size:100%;
     background-repeat: no-repeat;
     background-position: center top;
   }
