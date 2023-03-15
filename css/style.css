@@ -147,11 +147,14 @@ input:focus ~ .floating-label,
   font-family: OpenSans-Bold;
   font-size: 19px;
   margin-bottom: 3vh;
+  
 }
 
 .btn:hover {
-  background-color: #bec1d3;
+  background-color: #ffffff;
   transition-duration: 200ms;
+  color:#FF6ECD;
+  border:3px solid #FF6ECD;
 }
 
 .logo{
@@ -172,6 +175,11 @@ a {
   font-family: OpenSans-Bold;
   font-size: 19px;
   text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover{
+  text-decoration: underline;
   color: #ffffff;
 }
 
