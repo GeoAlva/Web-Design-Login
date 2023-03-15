@@ -53,13 +53,19 @@ html,body{
     float: right;
     width: 48%;
     height: 100%;
-    background-color: #8A42FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
   .form {
+    background-color: #8A42FE;
+    padding:10px 50px 20px 50px;
     color: #ffffff;
-    height: 100%;
+    height: fit-content;
     width: 20vw;
+    border-radius: 30px;
     margin:auto;
     display: flex;
     flex-direction: column;
