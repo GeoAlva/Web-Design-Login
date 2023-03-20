@@ -1,99 +1,107 @@
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
-  }
-  
-  body{
+}
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-  }
+}
 
-  .slogan {
-    color: #8A42FE;
-    margin-left: 105px;
-    position: absolute;
-    top:10px;
-    font-size: 45px;
-    font-family:MetropolisBlack;
-  }
-  .text_fg {
-    color:#8A42FE;
+
+.text_fg {
+    color: #8a42fe;
     font-family: OpenSans-Light;
     font-size: 23px;
     margin-left: 45px;
     margin-top: 40px;
-
 }
 
-  .home{
+.home {
     display: flex;
     height: 100%;
-  }
+}
 
-
-
-  .home .left{
-    float :left;
+.home .left {
+    float: left;
     width: 65%;
-    height: 100%;  }
+    height: 100%;
+}
 
-.left-top{
-    height: 20%;
-  }
+.left-top {
+    height: 30%;
+    padding-top: 3vh;
+    margin-top: 0;
+    margin-left: 25px;
+    z-index: 0;
+    position: absolute;
+}
 
-.left-bottom{
-  height: 80%;
+   .slogan {
+  color: #8a42fe;
+  margin-left: 105px;
+  position: absolute;
+  top:3vh;
+  font-size: 45px;
+  font-family: MetropolisBlack;
+  z-index: 0;
+}
+
+.left-bottom {
+    height: 70%;
+    margin-top: 20%;
+    padding-top: 0px;
     background-image: url("../images/bg.jpg");
-    background-size:100%;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center top;
-  }
+    background-position: center;
+    z-index: -1;
+}
 
-  .home .right {
+
+.home .right {
     float: right;
     width: 48%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
-  .form {
-    background-color: #8A42FE;
-    padding:10px 50px 20px 50px;
+.form {
+    background-color: #8a42fe;
+    padding: 6vh 5vw 10vh 6vw;
     color: #ffffff;
-    height: fit-content;
     width: 20vw;
-    border-radius: 30px;
-    margin:auto;
+    border-radius: 50px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.form .benvenuto{
-  font-family: MetropolisBlack,sans-serif;
-  font-size: 60px;
-  margin-bottom: 20px; 
+.form .benvenuto {
+    font-family: MetropolisBlack, sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-.form .form-left{
-  align-self: flex-start;
+.form .form-left {
+    align-self: flex-start;
 }
 
 .form .form-element {
-  display: flex;
-  position: relative;
-  padding-bottom: 1em;
-  margin-top: 2vh;
-  width: 100%;
-  align-items: center;
+    display: flex;
+    position: relative;
+    padding-bottom: 1em;
+    margin-top: 2vh;
+    width: 100%;
+    align-items: center;
 }
 
-
-.form-input{
+.form-input {
     position: relative;
     width: 100%;
     height: 3.2em;
@@ -105,101 +113,99 @@ html,body{
     border: none;
 }
 
-
-.floating-label{
+.floating-label {
     position: absolute;
     width: 100%;
     top: 19%;
     left: 1em;
-    color: #8A42FE;
+    color: #8a42fe;
     font-size: 18px;
     cursor: text;
     transition: top 200ms ease-in, font-size 200ms ease-in;
 
     font-family: OpenSans-Light;
-}   
+}
 
 input:focus ~ .floating-label,
-.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .floating-label{
-    top:0.5em;
-    font-size: 0.75rem ;
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .floating-label {
+    top: 0.5em;
+    font-size: 0.75rem;
     padding: 0 0.125em;
 }
 
-.icons{
-  height: 25px;
-  position:absolute;
-  margin-left:-30px;
+.icons {
+    height: 25px;
+    position: absolute;
+    margin-left: -30px;
 }
 
-
-.forgot{
-  font-family: OpenSans-Light;
-  font-size: 13px;
-  text-decoration: none;
-  align-self: flex-end;
+.forgot {
+    font-family: OpenSans-Light;
+    font-size: 13px;
+    text-decoration: none;
+    align-self: flex-end;
 }
 
 .btn {
-  min-width: 120px;
-  width: 140px;
-  height: 40px;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  background-color: #FF6ECD;
-  color: #ffffff;
-  margin-top: 2vh;
-  font-family: OpenSans-Bold;
-  font-size: 19px;
-  margin-bottom: 3vh;
-  
+    min-width: 120px;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+
+    outline: none;
+    background-color: #ff6ecd;
+    color: #ffffff;
+    margin-top: 2vh;
+    font-family: OpenSans-Bold;
+    font-size: 19px;
+    margin-bottom: 3vh;
+    border: 3px solid #ffffff;
 }
 
 .btn:hover {
-  background-color: #ffffff;
-  transition-duration: 200ms;
-  color:#FF6ECD;
-  border:3px solid #FF6ECD;
+    background-color: #ffffff;
+    transition-duration: 200ms;
+    color: #ff6ecd;
+    cursor: pointer;
 }
 
-.logo{
-  margin-bottom: 20px;
-  height: 40px;
-  margin-top: 70px;
-  margin-left: 45px;
+.logo {
+    margin-bottom: 20px;
+    height: 40px;
+    margin-top: 70px;
+    margin-left: 45px;
 }
 
-.account{
-  font-family: OpenSans-Light;
-  font-size: 13px;
-  margin-bottom: 5px;
+.account {
+    font-family: OpenSans-Light;
+    font-size: 13px;
+    margin-bottom: 5px;
 }
 
 a {
-  margin-top: 5px;
-  font-family: OpenSans-Bold;
-  font-size: 19px;
-  text-decoration: none;
-  color: #ffffff;
+    margin-top: 5px;
+    font-family: OpenSans-Bold;
+    font-size: 19px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-a:hover{
-  text-decoration: underline;
-  color: #ffffff;
-}
-
-@font-face {
-  font-family: MetropolisBlack;
-  src: url("../fonts/Metropolis-Black.otf");
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
 }
 
 @font-face {
-  font-family: OpenSans-Bold;
-  src: url("../fonts/OpenSans-Bold.ttf");
+    font-family: MetropolisBlack;
+    src: url("../fonts/Metropolis-Black.otf");
 }
 
 @font-face {
-  font-family: OpenSans-Light;
-  src: url("../fonts/OpenSans-Light.ttf");
+    font-family: OpenSans-Bold;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url("../fonts/OpenSans-Light.ttf");
 }
