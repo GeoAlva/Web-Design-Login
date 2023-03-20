@@ -9,15 +9,6 @@ body {
     margin: 0;
 }
 
-
-.text_fg {
-    color: #8a42fe;
-    font-family: OpenSans-Light;
-    font-size: 23px;
-    margin-left: 45px;
-    margin-top: 40px;
-}
-
 .home {
     display: flex;
     height: 100%;
@@ -40,12 +31,20 @@ body {
 
    .slogan {
   color: #8a42fe;
-  margin-left: 105px;
+  margin-left: 125px;
   position: absolute;
   top:3vh;
   font-size: 45px;
   font-family: MetropolisBlack;
   z-index: 0;
+}
+
+.text_fg {
+    color: #8a42fe;
+    font-family: OpenSans-Light;
+    font-size: 23px;
+    margin-left: 45px;
+    margin-top: 40px;
 }
 
 .left-bottom {
